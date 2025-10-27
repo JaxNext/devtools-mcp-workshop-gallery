@@ -11,15 +11,26 @@ const citiesData = {
     'Shanghai': shanghaiData,
 };
 
-// Get city icon
-function getCityIcon(cityName) {
-    const icons = {
-        'Hangzhou': '🏛️',
-        'Beijing': '🏮',
-        'Shenzhen': '🌆',
-        'Shanghai': '🌃'
+// Get city name in Chinese
+function getCityNameChinese(cityName) {
+    const chineseNames = {
+        'Hangzhou': '杭州',
+        'Beijing': '北京',
+        'Shenzhen': '深圳',
+        'Shanghai': '上海'
     };
-    return icons[cityName] || '🏙️';
+    return chineseNames[cityName] || cityName;
+}
+
+// Get workshop date
+function getWorkshopDate(cityName) {
+    const dates = {
+        'Hangzhou': '2025.11.01',
+        'Beijing': '2025.11.09',
+        'Shenzhen': '2025.11.16',
+        'Shanghai': '2025.11.22'
+    };
+    return dates[cityName] || '';
 }
 
 // Render cities on homepage
@@ -32,10 +43,10 @@ function renderCities() {
         const count = data.length;
         
         return `
-            <a href="city.html?name=${city}" class="city-card">
+            <a href="city.html?name=${city}" class="city-card" data-city="${city}">
                 <div class="city-header">
-                    <div class="city-icon">${getCityIcon(city)}</div>
-                    <h3>${city}</h3>
+                    <p class="workshop-date">${getWorkshopDate(city)}</p>
+                    <h3>${getCityNameChinese(city)}</h3>
                     <p class="student-count">${count} Developer${count !== 1 ? 's' : ''}</p>
                 </div>
                 <div class="city-body">

@@ -68,7 +68,12 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-image: 
+        linear-gradient(135deg, rgba(99, 102, 241, 0.8) 0%, rgba(139, 92, 246, 0.8) 100%),
+        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--white);
     padding: 8rem 0;
     text-align: center;
@@ -112,19 +117,61 @@ body {
 .about {
     padding: 6rem 0;
     background: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 50%;
+    opacity: 0.05;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    border-radius: 50%;
+    opacity: 0.05;
+}
+
+.section-header {
+    position: relative;
+    z-index: 1;
 }
 
 .about h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: var(--text-dark);
+    position: relative;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    margin: 0 auto 3rem;
+    border-radius: 2px;
 }
 
 .about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .about-card {
@@ -132,22 +179,50 @@ body {
     padding: 2.5rem;
     border-radius: 16px;
     box-shadow: var(--shadow);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
+    position: relative;
 }
 
 .about-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+    padding: 12px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.about-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.card-icon svg {
+    width: 48px;
+    height: 48px;
 }
 
 .about-card h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .about-card p {
     color: var(--text-light);
+    text-align: center;
 }
 
 /* Workshops Section */
@@ -232,20 +307,100 @@ body {
 }
 
 .city-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: transparent;
     color: var(--white);
     padding: 2rem;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background image on the element itself */
+.city-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+}
+
+.city-header:hover {
+    transform: scale(1.02);
+}
+
+/* Gradient overlay on pseudo-element */
+.city-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.city-header:hover::after {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+}
+
+/* City background images - applied directly to element */
+/* Beijing - The Forbidden City */
+.city-card[data-city="Beijing"] .city-header {
+    background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800');
+}
+
+/* Hangzhou - West Lake */
+.city-card[data-city="Hangzhou"] .city-header {
+    background-image: url('https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+/* Shanghai - The Bund Skyline */
+.city-card[data-city="Shanghai"] .city-header {
+    background-image: url('https://images.unsplash.com/photo-1528158222524-d4d912d2e9ae?w=800');
+}
+
+/* Shenzhen - Modern Skyline */
+.city-card[data-city="Shenzhen"] .city-header {
+    background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800');
+}
+
+.city-header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.workshop-date {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .city-header h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.city-header .city-icon {
+    position: relative;
+    z-index: 2;
 }
 
 .city-header .student-count {
     opacity: 0.9;
     font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
 }
 
 .city-body {
