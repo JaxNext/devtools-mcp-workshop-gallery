@@ -1,4 +1,8 @@
-# Workshop 快捷指令
+# Workshop Cheet Sheet
+
+## 本文链接
+
+[https://github.com/JaxNext/devtools-mcp-workshop-gallery/blob/main/workshop.md](https://github.com/JaxNext/devtools-mcp-workshop-gallery/blob/main/workshop.md)
 
 ## 官方仓库
 

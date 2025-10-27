@@ -350,19 +350,19 @@ body {
     background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800');
 }
 
-/* Hangzhou - West Lake */
+/* Hangzhou - West Lake from Bing Images */
 .city-card[data-city="Hangzhou"] .city-header {
-    background-image: url('https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-image: url('https://ts2.mm.bing.net/th?id=OIP.78PeyAZGh5Yjn7LHSD0CIwHaEK&pid=15.1');
 }
 
-/* Shanghai - The Bund Skyline */
+/* Shanghai - The Bund at Night from Bing Images */
 .city-card[data-city="Shanghai"] .city-header {
-    background-image: url('https://images.unsplash.com/photo-1528158222524-d4d912d2e9ae?w=800');
+    background-image: url('https://images.ctfassets.net/bth3mlrehms2/5SbiWnszA9G19xOKSB40mn/7313665c5df4f61f14ca0843b7ce73de/Skyline__Shanghai__China.jpg?w=1400&q=60&fm=webp');
 }
 
-/* Shenzhen - Modern Skyline */
+/* Shenzhen - Skyscrapers from Bing Images */
 .city-card[data-city="Shenzhen"] .city-header {
-    background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800');
+    background-image: url('https://www.bing.com/th/id/OIP.K999AsKW98z33Tr8XTPMnAHaJ8?w=138&h=186&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3');
 }
 
 .city-header > * {
