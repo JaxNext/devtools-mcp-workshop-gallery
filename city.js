@@ -19,6 +19,12 @@ const cityDataMap = {
 document.getElementById('cityName').textContent = `${cityName} Workshop Gallery`;
 document.title = `${cityName} Gallery - DevTools MCP Workshop`;
 
+// Set data attribute for background image styling
+const galleryHeader = document.querySelector('.gallery-header');
+if (galleryHeader) {
+    galleryHeader.setAttribute('data-city', cityName);
+}
+
 // Render websites
 function renderWebsites() {
     const websitesGrid = document.getElementById('websitesGrid');
@@ -36,19 +42,33 @@ function renderWebsites() {
     }
     
     websitesGrid.innerHTML = websites.map((site, index) => {
-        const author = site.author || 'Developer';
+        const author = site.authorName || 'Developer';
         const previewEmoji = getPreviewEmoji(site.link);
         
         return `
-            <a href="${site.link}" target="_blank" rel="noopener noreferrer" class="website-card">
-                <div class="website-preview">${previewEmoji}</div>
-                <div class="website-info">
-                    <h3 class="website-title">${site.link.replace(/^https?:\/\//, '')}</h3>
-                    <p class="website-author">by ${author}</p>
-                </div>
-            </a>
+            <div class="website-card">
+                <a href="${site.link}" target="_blank" rel="noopener noreferrer" class="website-link-wrapper">
+                    <div class="website-preview">${previewEmoji}</div>
+                    <div class="website-info">
+                        <h3 class="website-title">${site.link.replace(/^https?:\/\//, '')}</h3>
+                        <p class="website-author">by <span class="github-link" data-github="${author}">@${author}</span></p>
+                    </div>
+                </a>
+            </div>
         `;
     }).join('');
+    
+    // Add click handlers for GitHub links
+    websitesGrid.querySelectorAll('.github-link').forEach(link => {
+        const githubUser = link.getAttribute('data-github');
+        link.style.cursor = 'pointer';
+        link.style.textDecoration = 'underline';
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.open(`https://github.com/${githubUser}`, '_blank', 'noopener,noreferrer');
+        });
+    });
 }
 
 // Get preview emoji based on site type

@@ -47,10 +47,9 @@ function renderCities() {
                 <div class="city-header">
                     <p class="workshop-date">${getWorkshopDate(city)}</p>
                     <h3>${getCityNameChinese(city)}</h3>
-                    <p class="student-count">${count} Developer${count !== 1 ? 's' : ''}</p>
                 </div>
                 <div class="city-body">
-                    <p>Click to view gallery →</p>
+                    <p>${count} Project${count !== 1 ? 's' : ''} →</p>
                 </div>
             </a>
         `;
