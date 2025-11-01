@@ -447,18 +447,30 @@ body {
 /* City background images for gallery header - reusing from city cards */
 .gallery-header[data-city="Beijing"] {
     background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .gallery-header[data-city="Hangzhou"] {
     background-image: url('https://ts2.mm.bing.net/th?id=OIP.78PeyAZGh5Yjn7LHSD0CIwHaEK&pid=15.1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .gallery-header[data-city="Shanghai"] {
     background-image: url('https://images.ctfassets.net/bth3mlrehms2/5SbiWnszA9G19xOKSB40mn/7313665c5df4f61f14ca0843b7ce73de/Skyline__Shanghai__China.jpg?w=1400&q=60&fm=webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .gallery-header[data-city="Shenzhen"] {
     background-image: url('https://www.bing.com/th/id/OIP.K999AsKW98z33Tr8XTPMnAHaJ8?w=138&h=186&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .gallery-header .container {
