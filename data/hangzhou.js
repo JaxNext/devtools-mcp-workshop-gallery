@@ -54,4 +54,9 @@ export default [
         authorName: 'tricial12',
         authorGitHubLink: 'https://github.com/tricial12',
     },
+    {
+        link: 'https://giftedscout.github.io/DevTools-MCP-Frontend/',
+        authorName: 'giftedscout',
+        authorGitHubLink: 'https://github.com/giftedscout',
+    }
 ]
