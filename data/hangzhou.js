@@ -58,5 +58,10 @@ export default [
         link: 'https://giftedscout.github.io/DevTools-MCP-Frontend/',
         authorName: 'giftedscout',
         authorGitHubLink: 'https://github.com/giftedscout',
+    },
+    {
+        link: 'https://geekgallifrey.github.io/Google-Dev/',
+        authorName: 'geekgallifrey',
+        authorGitHubLink: 'https://github.com/geekgallifrey',
     }
 ]
