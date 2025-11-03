@@ -73,5 +73,10 @@ export default [
         link: 'https://sjx1943.github.io/devfest-workshop-site-2025',
         authorName: 'sjx1943',
         authorGitHubLink: 'https://github.com/sjx1943'
+    },
+    {
+        link: 'https://yangjiwen.github.io/google_dev_crazy/',
+        authorName: 'yangjiwen',
+        authorGitHubLink: 'https://github.com/yangjiwen'
     }
 ]
