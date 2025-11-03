@@ -63,5 +63,15 @@ export default [
         link: 'https://geekgallifrey.github.io/Google-Dev/',
         authorName: 'geekgallifrey',
         authorGitHubLink: 'https://github.com/geekgallifrey',
+    },
+    {
+        link: 'https://guinanlin.github.io/google-dev/index.html',
+        authorName: 'guinanlin',
+        authorGitHubLink: 'https://github.com/guinanlin'
+    },
+    {
+        link: 'https://sjx1943.github.io/devfest-workshop-site-2025',
+        authorName: 'sjx1943',
+        authorGitHubLink: 'https://github.com/sjx1943'
     }
 ]
