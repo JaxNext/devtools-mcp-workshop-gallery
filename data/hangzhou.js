@@ -78,5 +78,10 @@ export default [
         link: 'https://yangjiwen.github.io/google_dev_crazy/',
         authorName: 'yangjiwen',
         authorGitHubLink: 'https://github.com/yangjiwen'
+    },
+    {
+        link: 'https://zhonglin0730.github.io/DevFest2025-HZ/',
+        authorName: 'zhonglin0730',
+        authorGitHubLink: 'https://github.com/zhonglin0730'
     }
 ]
