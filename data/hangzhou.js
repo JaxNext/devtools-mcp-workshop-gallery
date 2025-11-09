@@ -83,5 +83,10 @@ export default [
         link: 'https://zhonglin0730.github.io/DevFest2025-HZ/',
         authorName: 'zhonglin0730',
         authorGitHubLink: 'https://github.com/zhonglin0730'
+    },
+    {
+        link: 'https://cycle001.github.io/devfest-workshop-website/',
+        authorName: 'cycle001',
+        authorGitHubLink: 'https://github.com/cycle001'
     }
 ]

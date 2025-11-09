@@ -28,6 +28,11 @@ export default [
         link: 'https://fa1c0nsec.github.io/2025-gdgdevfest-beijing-chromedevtools-workshop-fa1c0n.github.io/',
         authorName: 'fa1c0nsec',
         authorGitHubLink: 'https://github.com/fa1c0nsec',
-    }
+    },
+    {
+        link: 'https://anlijun.github.io/devfest-workshop-website/',
+        authorName: 'anlijun',
+        authorGitHubLink: 'https://github.com/anlijun',
+    },
 ]
 
