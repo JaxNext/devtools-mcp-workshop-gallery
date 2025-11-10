@@ -34,5 +34,15 @@ export default [
         authorName: 'anlijun',
         authorGitHubLink: 'https://github.com/anlijun',
     },
+    {
+        link: 'https://mingzeh.github.io/chrome-devtools-workshop/',
+        authorName: 'mingzeh',
+        authorGitHubLink: 'https://github.com/mingzeh',
+    },
+    {
+        link: 'https://hwxy233.github.io/chrome-devtools-mcp-workshop/index.html',
+        authorName: 'hwxy233',
+        authorGitHubLink: 'https://github.com/hwxy233',
+    },
 ]
 
