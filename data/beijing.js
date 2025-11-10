@@ -44,5 +44,10 @@ export default [
         authorName: 'hwxy233',
         authorGitHubLink: 'https://github.com/hwxy233',
     },
+    {
+        link: 'https://xingzuoshe.cn/devfest-beijing-devtools-workshop/index.html',
+        authorName: 'xingzuoshe',
+        authorGitHubLink: 'https://github.com/xingzuoshe',
+    },
 ]
 
