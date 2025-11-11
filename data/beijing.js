@@ -49,5 +49,10 @@ export default [
         authorName: 'xingzuoshe',
         authorGitHubLink: 'https://github.com/xingzuoshe',
     },
+    {
+        link: 'https://chrome-devtools-workshop.pages.dev/',
+        authorName: 'liuzx',
+        authorGitHubLink: 'https://github.com/DeepLifeStudio',
+    }
 ]
 
