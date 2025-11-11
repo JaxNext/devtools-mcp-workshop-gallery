@@ -4,6 +4,11 @@
 
 [https://github.com/JaxNext/devtools-mcp-workshop-gallery/blob/main/workshop.md](https://github.com/JaxNext/devtools-mcp-workshop-gallery/blob/main/workshop.md)
 
+## 安装文档
+
+- [在 VS Code 中安装 Chrome DevTools MCP](./install_on_vscode.md)
+- [在 Windows 中安装 Chrome DevTools MCP](./install_on_windows.md)
+
 ## 官方仓库
 
 [https://github.com/ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)
@@ -12,28 +17,19 @@
 
 [https://jaxnext.github.io/devtools-mcp-workshop-gallery/](https://jaxnext.github.io/devtools-mcp-workshop-gallery/)
 
-## 安装配置
-
-```json
-{
-  "mcpServers": {
-    "chrome-devtools": {
-      "command": "npx",
-      "args": ["-y", "chrome-devtools-mcp@latest"]
-    }
-  }
-}
-```
-
 ## 测试指令
 
 ```
-检查 https://developers.chrome.com/docs/devtools/mcp/ 的网页性能
+用 DevTools MCP 工具检查 https://google.com 的网页性能
 ```
 
 ## 热身文件
 
 [https://github.com/JaxNext/chrome-devtools-ai-demos/blob/main/mcp.html](https://github.com/JaxNext/chrome-devtools-ai-demos/blob/main/mcp.html)
+
+## 闯关游戏
+
+[https://jaxnext.github.io/devtools-mcp-game/](https://jaxnext.github.io/devtools-mcp-game/)
 
 ## 零代码网站
 
