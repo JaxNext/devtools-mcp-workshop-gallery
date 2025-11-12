@@ -1,5 +1,31 @@
 # Chrome DevTools MCP Workshop 锦囊
 
+## 目录
+
+- [Workshop 步骤](#workshop-步骤)
+  - [一、安装](#一安装)
+    - [1. 检查你的电脑是否满足运行条件](#1-检查你的电脑是否满足运行条件)
+    - [2. 安装一款智能代码编辑器（IDE）](#2-安装一款智能代码编辑器ide)
+    - [3. 在 IDE 中安装 Chrome DevTools MCP](#3-在-ide-中安装-chrome-devtools-mcp)
+    - [4. 首次运行 DevTools MCP](#4-首次运行-devtools-mcp)
+  - [二、牛刀小试，一句话修复故障](#二牛刀小试一句话修复故障)
+  - [三、零代码建站](#三零代码建站)
+    - [1. 初始化工程](#1-初始化工程)
+    - [2. 设置对话规则](#2-设置对话规则)
+    - [3. 建站](#3-建站)
+    - [4. 部署网站](#4-部署网站)
+    - [5. 作品大合影](#5-作品大合影)
+- [链接合集](#链接合集)
+  - [本文链接](#本文链接)
+  - [DevTools MCP 官方仓库](#devtools-mcp-官方仓库)
+  - [Gallery 链接](#gallery-链接)
+  - [一个有 Bug 的网页](#一个有-bug-的网页)
+  - [闯关游戏](#闯关游戏)
+- [提示词合集](#提示词合集)
+  - [首次运行](#首次运行)
+  - [闯关游戏](#闯关游戏提示词)
+  - [零代码建站](#零代码建站)
+
 ## Workshop 步骤
 
 ### 一、安装
@@ -39,7 +65,7 @@
 
 我们来模拟一个 bug 现场，让 AI 使用 DevTools MCP 工具提供一条龙服务：发现问题、定位原因、修复问题、自测效果。
 
-#### 1. 将下面的 html 文件下载到本地：
+将下面的 html 文件下载到本地：
 
 [https://github.com/JaxNext/chrome-devtools-ai-demos/blob/main/mcp.html](https://github.com/JaxNext/chrome-devtools-ai-demos/blob/main/mcp.html)
 
@@ -124,17 +150,21 @@ AI 生成初版网站后，找出你不满意的地方，让 AI 进行优化，�
 
 ## 提示词合集
 
+### 首次运行
+
 -  安装后首次运行 DevTools MCP 的提示词
 
     ```
     用 DevTools MCP 工具检查 https://google.com 的网页性能
     ```
+### 闯关游戏提示词
 
 - [闯关游戏的启动提示词](./docs/game.md)
 
-- 零代码上线网站的提示词
+### 零代码建站
 
-  - [系统提示词 / 规则](./docs/rules.md)
+- [系统提示词 / 规则](./docs/rules.md)
 
-  - [建站提示词模板](./docs/website_dev.md)
-  - [部署网站的提示词](./docs/website_deploy.md)
+- [建站提示词模板](./docs/website_dev.md)
+
+- [部署网站的提示词](./docs/website_deploy.md)
