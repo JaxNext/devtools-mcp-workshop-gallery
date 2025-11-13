@@ -12,11 +12,11 @@
 
 点击这个按钮：[<img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Install in Cursor">](https://cursor.com/en/install-mcp?name=chrome-devtools&config=eyJjb21tYW5kIjoibnB4IC15IGNocm9tZS1kZXZ0b29scy1tY3BAbGF0ZXN0In0%3D)，Curosr 会被打开，并直达安装界面：
 
-![install](./images/cursor_install_form.jpeg)
+![install](../images/cursor_install_form.jpeg)
 
 点击右下角的「安装」按钮，chrome-devtools MCP 会被安装到你的电脑中。安装成功如图：
 
-![alt text](./images/cursor_install_success.png)
+![alt text](../images/cursor_install_success.png)
 
 如果你看到左下角的圆点是红色或者黄色，或者下方显示「0 tools enabled」，可以重启 Cursor 试试。
 

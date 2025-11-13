@@ -27,12 +27,12 @@ code --add-mcp '{"name":"chrome-devtools","command":"npx","args":["chrome-devtoo
 
 打开 VS Code，点击左侧边栏的「扩展」图标进入扩展列表，在下方可以看到安装成功的 chrome-devtools MCP。
 
-![alt text](./images/vscode_install.png)
+![alt text](../images/vscode_install.png)
 
 点击右下角的齿轮按钮展开菜单：
 
-![alt text](./images//vscode_menu.png)
+![alt text](../images//vscode_menu.png)
 
 当看到 VS Code 里输出了如下信息，说明 MCP 已经成功安装：
 
-![alt text](./images/vscode_output.png)
+![alt text](../images/vscode_output.png)
