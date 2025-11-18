@@ -73,6 +73,16 @@ export default [
         link: 'https://skyfall-j.github.io/devtools-mcp-website/index.html',
         authorName: 'skyfall-j',
         authorGitHubLink: 'https://github.com/skyfall-j',
+    },
+    {
+        link: 'https://eloisepeng.github.io/google-devtools-mcp/',
+        authorName: 'eloisepeng',
+        authorGitHubLink: 'https://github.com/eloisepeng',
+    },
+    {
+        link: 'https://ken2008huang.github.io/devtools-mcp-website/',
+        authorName: 'ken2008huang',
+        authorGitHubLink: 'https://github.com/ken2008huang',
     }
 ]
 
