@@ -53,6 +53,11 @@ export default [
         link: 'https://chrome-devtools-workshop.pages.dev/',
         authorName: 'liuzx',
         authorGitHubLink: 'https://github.com/DeepLifeStudio',
+    },
+    {
+        link: 'https://zxcalbert.github.io/devtools-mcp-site/',
+        authorName: 'zxcalbert',
+        authorGitHubLink: 'https://github.com/zxcalbert',
     }
 ]
 
