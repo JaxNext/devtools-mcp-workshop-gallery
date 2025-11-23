@@ -58,6 +58,11 @@ export default [
         link: 'https://zxcalbert.github.io/devtools-mcp-site/',
         authorName: 'zxcalbert',
         authorGitHubLink: 'https://github.com/zxcalbert',
+    },
+    {
+        link: 'https://zbc0512.github.io/devtools-mcp-website/',
+        authorName: 'zbc0512',
+        authorGitHubLink: 'https://github.com/zbc0512',
     }
 ]
 
