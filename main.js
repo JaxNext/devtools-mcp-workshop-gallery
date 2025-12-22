@@ -2,9 +2,11 @@ import hangzhouData from './data/hangzhou.js';
 import beijingData from './data/beijing.js';
 import shenzhenData from './data/shenzhen.js';
 import shanghaiData from './data/shanghai.js';
+import changshaData from './data/changsha.js';
 
 // City data mapping
 const citiesData = {
+    'Changsha': changshaData,
     'Hangzhou': hangzhouData,
     'Beijing': beijingData,
     'Shenzhen': shenzhenData,
@@ -14,6 +16,7 @@ const citiesData = {
 // Get city name in Chinese
 function getCityNameChinese(cityName) {
     const chineseNames = {
+        'Changsha': '长沙',
         'Hangzhou': '杭州',
         'Beijing': '北京',
         'Shenzhen': '深圳',
@@ -25,6 +28,7 @@ function getCityNameChinese(cityName) {
 // Get workshop date
 function getWorkshopDate(cityName) {
     const dates = {
+        'Changsha': '2025.12.21',
         'Hangzhou': '2025.11.01',
         'Beijing': '2025.11.09',
         'Shenzhen': '2025.11.16',
@@ -36,7 +40,7 @@ function getWorkshopDate(cityName) {
 // Render cities on homepage
 function renderCities() {
     const citiesGrid = document.getElementById('citiesGrid');
-    const cities = ['Hangzhou', 'Beijing', 'Shenzhen', 'Shanghai'];
+    const cities = ['Changsha', 'Hangzhou', 'Beijing', 'Shenzhen', 'Shanghai'];
     
     citiesGrid.innerHTML = cities.map(city => {
         const data = citiesData[city] || [];

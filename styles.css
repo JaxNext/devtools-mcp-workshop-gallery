@@ -345,6 +345,11 @@ body {
 }
 
 /* City background images - applied directly to element */
+
+.city-card[data-city="Changsha"] .city-header {
+    background-image: url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/13/e7/4e/16.jpg');
+}
+
 /* Beijing - The Forbidden City */
 .city-card[data-city="Beijing"] .city-header {
     background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800');

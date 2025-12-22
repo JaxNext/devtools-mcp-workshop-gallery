@@ -2,6 +2,7 @@ import hangzhouData from './data/hangzhou.js';
 import beijingData from './data/beijing.js';
 import shenzhenData from './data/shenzhen.js';
 import shanghaiData from './data/shanghai.js';
+import changshaData from './data/changsha.js';
 
 // Get city name from URL
 const urlParams = new URLSearchParams(window.location.search);
@@ -9,6 +10,7 @@ const cityName = urlParams.get('name') || 'Hangzhou';
 
 // City data mapping
 const cityDataMap = {
+    'Changsha': changshaData,
     'Hangzhou': hangzhouData,
     'Beijing': beijingData,
     'Shenzhen': shenzhenData,
